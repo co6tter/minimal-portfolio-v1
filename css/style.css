@@ -73,3 +73,21 @@ footer {
   text-align: center;
   color: #aaa;
 }
+
+.animate {
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+
+  &.slide-from-left {
+    transform: translateX(-40px);
+  }
+
+  &.slide-from-right {
+    transform: translateX(40px);
+  }
+
+  &.appear {
+    opacity: 1;
+    transform: none;
+  }
+}
